@@ -1,5 +1,19 @@
 # MolViBench: Evaluating LLMs on Molecular Vibe Coding
 
+## Minimal offline agent demo
+
+For a fast, no-API introduction to the repository's Coder--Tester collaboration
+setting, run:
+
+```bash
+python mini_agent_demo.py
+```
+
+The added demo has a Coder propose a dependency-free molecular-weight function
+for simple C/O/N SMILES and a Tester execute it on two held-out molecules. It
+intentionally keeps the workflow deterministic and compact; use
+`inference_ac.py` for the full LLM-backed two-agent benchmark.
+
 [![arXiv](https://img.shields.io/badge/arXiv-2605.02351-b31b1b.svg)](https://arxiv.org/abs/2605.02351v2)
 
 **MolViBench** is the first benchmark tailored for *Molecular Vibe Coding* — a paradigm where chemists interact with LLMs to generate executable programs for molecular tasks.
